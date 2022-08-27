@@ -33,7 +33,8 @@ Route::get('/users/{paramA}/{paramB}', function($paramA, $paramB){
     return 'Parametros: '.$paramA.' - '.$paramB;
 });
 
+Route::get('/', 'App\Http\Controllers\PrimeiroController@hello');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//   return view('welcome');
+//});

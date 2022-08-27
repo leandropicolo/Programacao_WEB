@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PrimeiroController extends Controller
 {
     public function hello(){
-        return "Olá mundo!";
+        return "Olá Mundo!";
     }
 }

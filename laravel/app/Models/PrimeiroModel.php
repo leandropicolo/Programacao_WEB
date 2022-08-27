@@ -7,6 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class PrimeiroModel extends Model
 {
-    //codigo
-    
+    //codigo 
 }

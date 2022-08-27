@@ -12,6 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'App\Http\Controllers\PrimeiroController@hello');
+
 Route::prefix('usuario')->group(function(){
     Route::get('', function(){
         return 'usuario';
@@ -32,9 +34,6 @@ Route::get('/users/{id}', function($id=null){
 Route::get('/users/{paramA}/{paramB}', function($paramA, $paramB){
     return 'Parametros: '.$paramA.' - '.$paramB;
 });
-
-Route::get('/', 'App\Http\Controllers\PrimeiroController@hello');
-
-//Route::get('/', function () {
-//   return view('welcome');
-//});
+// Route::get('/', function () {
+//     return view('welcome');
+// });

@@ -1,0 +1,19 @@
+Ambiente
+
+VSCODE - IDL
+Laravel - Framework
+Composer
+PHP         |
+Apache      |   Wamp
+MySQL       |
+
+
+**************** Composer *******************
+
+composer create-project laravel/laravel
+
+entrar na pasta para fazer o comando abaixo
+
+php artisan
+
+php artisan server

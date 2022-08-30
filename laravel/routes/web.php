@@ -12,28 +12,28 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'App\Http\Controllers\PrimeiroController@hello');
 
-Route::prefix('usuario')->group(function(){
-    Route::get('', function(){
+Route::prefix('usuarios')->group(function(){
+    Route::get('',function(){
         return 'usuario';
     });
     Route::get('/{id}', function($id){
-        return 'Mostrar detalhes usuario'.$id;
+        return 'Mostrar detalhes usuario' .$id;
     });
     Route::get('/{id}/tags', function($id){
-        return 'Tags do usuario'.$id;
+        return 'tags do usuario' .$id;
     });
 });
 
-Route::get('/users/{id}', function($id=null){
-    return 'Id do Usuário: '.$id;
+
+Route::get('/user/{paramA}/{paramb}', function($paramA, $paramb){
+    return 'Parametros:'.$paramA.'-'.$paramb;
 });
 
-
-Route::get('/users/{paramA}/{paramB}', function($paramA, $paramB){
-    return 'Parametros: '.$paramA.' - '.$paramB;
+Route::get('/user/{id}', function($id){
+    return 'Id Usuario'.$id;
 });
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+
+Route::get('/', function () {
+    return view('welcome');
+});

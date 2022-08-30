@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\CalculoDeCombustivel;
+use App\Models\CalculoDeImc;
 
-class CombustivelController extends Controller
+class ImcController extends Controller
 {
     
     public function index() {
@@ -13,9 +13,9 @@ class CombustivelController extends Controller
     }
 
     public function gasto() {
-        $calculoDeCombustivel = new CalculoDeCombustivel();
+        $calculoDeImc = new CalculoDeImc();
 
-        $valor = $calculoDeCombustivel->calcular();
+        $valor = $calculoDeImc->calcular();
 
         return view('resultado', ['valor'=>$valor]);
     }

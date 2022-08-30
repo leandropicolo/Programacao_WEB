@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\CombustivelController@index');
+Route::get('/', 'App\Http\Controllers\ImcController@index');
 
-Route::get('/gasto', 'App\Http\Controllers\CombustivelController@gasto');
+Route::get('/gasto', 'App\Http\Controllers\ImcController@gasto');
 
 // Route::get('/', function () {
 //     return view('welcome');

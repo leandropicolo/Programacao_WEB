@@ -27,11 +27,11 @@
             <div class="conteudo-painel">
                 <form action="{{url('/gasto')}}" method="get">
 
-                    <label for="distancia">Distância em Quilômetros a ser percorrida</label>
-                    <input type="number" class="campoTexto"  name="distancia" required/>
+                    <label for="peso">Distância em Quilômetros a ser percorrida</label>
+                    <input type="text" class="campoTexto"  name="peso" required/>
 
-                    <label for="autonomia">Consumo de combustível do veículo (Km/L)</label>
-                    <input type="number" class="campoTexto" name="autonomia" required/>
+                    <label for="altura">Consumo de combustível do veículo (Km/L)</label>
+                    <input type="text" class="campoTexto" name="altura" required/>
 
                     <button class="botao" type="submit">Calcular</button>
                 </form>

@@ -13,7 +13,7 @@ class CalculoDeImc extends Model
 
         
 
-        $imc = ($peso / $altura * $altura);
+        $imc = ($peso / ($altura * $altura));
 
         return $imc;
 

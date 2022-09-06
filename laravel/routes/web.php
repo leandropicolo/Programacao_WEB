@@ -13,27 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('usuarios')->group(function(){
-    Route::get('',function(){
-        return 'usuario';
-    });
-    Route::get('/{id}', function($id){
-        return 'Mostrar detalhes usuario' .$id;
-    });
-    Route::get('/{id}/tags', function($id){
-        return 'tags do usuario' .$id;
-    });
-});
+Route::get('/', 'App\Http\Controllers\ImcController@index');
 
+Route::get('/gasto', 'App\Http\Controllers\ImcController@gasto');
 
-Route::get('/user/{paramA}/{paramb}', function($paramA, $paramb){
-    return 'Parametros:'.$paramA.'-'.$paramb;
-});
-
-Route::get('/user/{id}', function($id){
-    return 'Id Usuario'.$id;
-});
-
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
